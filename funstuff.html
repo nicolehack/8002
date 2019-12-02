@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<html>
+    <head>
+    <title>
+    	Fun Stuff
+	</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/funstuffstyle.css">
+
+    </head>
+	
+</head>
+
+<body>
+	
+	
+<!--------------  MAIN NAVIGATION SECTION	--------------->	
+	
+	
+	<section class="mainNav">
+		
+	<div class="col1 fl">
+	<a class="navLinkBlue">about</a>
+	<a class="navLinkPink">choices</a>
+	</div>	
+		
+
+		
+	<div class="col1 fr">
+		<a href="" class="navLinkBlue onActive">fun stuff</a>
+		<a href="form.html" class="navLinkPink">contact</a>
+	</div>
+		
+	<div class="col2"> 		
+		<a href="homepage.html"> <img src="images/lingscars-logo.png"  id="logoImg" alt="logo image"></a>
+	</div>
+		
+		
+	<div class="clear"></div>
+	</section>
+	
+<!--------------  FUN STUFF SECTION	--------------->
+
+<section> 
+		
+<!------------------ LINGATAR SECTION ------------------>	
+		
+	<div class="col3 fl">
+		
+		<p class="lingatar">Choose your Ling-atar</p>
+		
+			<div>
+		<p class="avatarTitle">Ling vader</p>
+		<img src="images/avatar1.gif" class="avatarLingIcon" alt="avatar1">
+			</div>
+			
+		<div>
+			<p class="avatarTitle">MR.LING</p>
+			<img src="images/avatar3.png" class="avatarLingIcon" alt="avatar3">
+			</div>
+		
+		
+		<div>
+			<p class="avatarTitle">what the fuck</p>
+			<img src="images/avatar2.png" class="avatarLingIcon" alt="avatar2">
+			</div>
+		
+		
+		<div>
+			<p class="avatarTitle">THRALL</p>			
+			<img src="images/avatar5.png" class="avatarLingIcon" alt="avatar1">
+			
+			</div>
+		
+		<div>
+			<p class="avatarTitle">BOOM!</p>
+			<img src="images/avatar4.png" class="avatarLingIcon" alt="avatar1">
+			</div>
+
+		</div>
+		
+	<!------------------ QUIZ SECTION ------------------>	
+				
+	<div class="col4 fr">
+		
+		
+<!---------- QUIZ TITLE ----------->	
+
+		<div class="quizMain">
+			
+		<p class="quiz">quiz
+			<br>
+			<span class="catsCars">Cats in cars</span>
+			</p>
+			
+		</div>
+		
+<!---------- QUIZ ----------->	
+
+		<div class="col5 fl quizText">is this a cat in a car?</div>
+		
+		<img src="images/c5028c7d13852f431a2a6325b5793795.jpg" alt="cat in a car" class="col5 fl catCar">
+		
+		<div class="col5 fr">
+		
+		<button id="yes1" class="buttonQuiz">YES</button>
+			<br>
+			<button id="no1" class="buttonQuiz">NO</button>
+		
+		</div>
+		
+				 <div class="clear"></div>
+
+		
+		<div class="col5 fl quizText">is this a cat in a car?</div>
+		
+		<img src="images/Fat-Cat-Driving-a-Car--45477.jpg" alt="cat in a car" class="col5 fl catCar">
+		
+		<div class="col5 fr">
+		
+		<button id="yes2" class="buttonQuiz">YES</button>
+		
+		<br>
+			<button id="no2" class="buttonQuiz">NO</button>
+		
+		</div>
+		
+				 <div class="clear"></div>
+		
+		<div class="col5 fl quizText">is this a cat in a car?</div>
+		
+		<img src="images/scotland.png" alt="cat in a car" class="col5 fl catCar">
+		
+		<div class="col5 fr">
+		
+		<button id="yes3" class="buttonQuiz">YES</button>
+			<br>
+			<button id="no3" class="buttonQuiz">NO</button>
+		
+		</div>
+	</div>
+
+	
+	<button id="sub" type="submit" value="Submit" class="submitButton" >Submit</button>
+	<p id="res" class="results fr">RESULT: ? / 3</p>
+	
+		
+ <div class="clear"></div>
+
+	</section>
+	
+<!------------------------ FOOTER SECTION -------------------->	
+	
+
+<footer>
+	
+	<p class="col8 fl footerBlue">happy customers Today</p>
+	<p class="col8 fl footerNumbers">42</p> 
+	<p class="col8 fl footerPink">Site Response Time</p> 
+	<p class="col8 fl footerNumbers">00.40</p> 
+	<p class="col8 fl footerBlue">Live Office Camera</p> 
+	<p class="col8 fl footerPink">Site Visitors Today</p> 
+	<p class="col8 fl footerNumbers">1,539</p> 
+	<p class="col8 fl footerBlue">Site Visitors Now</p>
+	<p class="col8 fl footerNumbers">12</p> 
+	<p class="col8 fl footerYellow">Chat with Ling</p> 
+
+	 <div class="clear"></div>
+
+</footer>
+		
+<!----------------- JAVA SCRIPT FOR THE QUIZ  ---------------------->	
+
+<script>
+
+	function changeColor(){
+		if(this.id=="yes1"){
+			y1.className="buttonQuizPress";
+			n1.className="buttonQuiz";
+			clk1 = 1;
+		}
+		else if (this.id=="no1") {
+			y1.className="buttonQuiz";
+			n1.className="buttonQuizPress";
+			clk1 = 0;
+		}
+
+		if(this.id=="yes2"){
+			y2.className="buttonQuizPress";
+			n2.className="buttonQuiz";
+			clk2= 1;
+		}
+		else if (this.id=="no2") {
+			y2.className="buttonQuiz";
+			n2.className="buttonQuizPress";
+			clk1=0;
+		}
+
+		if(this.id=="yes3"){
+			y3.className="buttonQuizPress";
+			n3.className="buttonQuiz";
+			clk3= 0;
+		}
+		else if (this.id=="no3") {
+			y3.className="buttonQuiz";
+			n3.className="buttonQuizPress";
+			clk3 = 1;
+		}
+	}
+
+
+	function results(){
+		res.innerHTML = "Result: " +   String(clk1+clk2+clk3) + " / 3";
+	}
+
+	var y1=document.querySelector("#yes1");
+	var n1=document.querySelector("#no1");
+
+	var y2=document.querySelector("#yes2");
+	var n2=document.querySelector("#no2");
+
+	var y3=document.querySelector("#yes3");
+	var n3=document.querySelector("#no3");
+
+	var sub=document.querySelector("#sub");
+	var res=document.querySelector("#res");
+
+	var clk1=0, clk2=0, clk3=0;
+
+
+	y1.addEventListener("click", changeColor);
+	n1.addEventListener("click", changeColor);
+
+	y2.addEventListener("click", changeColor);
+	n2.addEventListener("click", changeColor);
+
+	y3.addEventListener("click", changeColor);
+	n3.addEventListener("click", changeColor);
+
+	sub.addEventListener("click", results);
+
+</script>
+	
+</body>
+</html>
+		
+		

@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto&display=swap');
+
+body{
+	width:100%;
+	height: auto;
+	margin:0 auto;
+	background-color:#604873;
+}
+
+#logoImg{
+	width:90%;
+	height: auto;	
+}
+
+/******* COLUMNS  ******/
+
+.col1{
+	width: 30%;
+	margin-top: 10px;	
+}
+
+.col2{
+	width:30%;
+	margin: 0 auto;	
+}
+
+.col8{width:15%;}
+
+
+.fl {float:left;}
+.fr {float:right;}
+.clear {clear:both;}
+
+/******* MAIN NAVIGATION ******/
+
+.mainNav{
+	width:100%;
+	background-color: #2F0A3C;
+	text-align: center;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	position: fixed;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navLinkBlue{
+	color:#FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	padding-left:25px;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #30B9C4;
+	border-radius: 20px;
+	margin-right: 35px;	
+}
+
+.navLinkPink{
+	color:#FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	padding-left:25px;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #C52068;
+	border-radius: 20px;	
+}
+
+a {
+	text-decoration: none;	
+}
+
+.navLinkBlue:hover {
+	background-color:#FDBF2B;
+
+}
+.navLinkPink:hover {
+	background-color:#FDBF2B;
+}
+
+
+/*******YELLOW BORDER ON ACTIVE PAGE******/
+
+.onActive{
+		border:#FDBF2B 3px solid;
+}
+
+/**********  FUN STUFF SECTION ********/
+
+
+/******* COLUMNS  ******/
+
+.col4{
+	width:80%;
+	height:100%;
+	background-color: #604873;
+}
+
+.col5{width:25%;}
+.col6{width:15%;}
+.col7{width:40%;}
+
+/**********  QUIZ TITLE SECTION ********/
+
+.quizMain{
+	width:30%;
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+.results{
+	font-family: 'Bungee Inline', cursive !important;
+	font-size: 25px;
+	color:white;
+	width:20%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color:#C52068;
+	border-radius: 10px;
+	text-align: center;
+	margin-right: 200px;
+}
+
+.submitButton{
+	font-family: 'Bungee Inline', cursive !important;
+	font-size: 25px;
+	color:white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color:#C52068;
+	border-radius: 10px;
+	margin-left: 250px;
+	margin-top: 24px;
+	text-align: center;
+	border:none;	
+}
+
+.submitButton:hover{
+	background-color:#FDBF2B;
+}
+
+.quiz{
+	font-family: 'Bungee Inline', cursive !important;
+	font-size: 35px;
+	color:white;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 80px;
+	padding-right: 80px;
+	background-color:#C52068;
+	border-radius: 10px;
+	margin-top: 100px;
+	text-align: center;	
+}
+
+.catsCars{
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 20px;
+	text-transform: uppercase;		
+}
+
+.quizText{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	color:white;
+	text-transform: uppercase;
+	padding-left: 100px;
+	font-weight: bold;	
+}
+
+.catCar{
+	width:250px;
+	height: auto;
+	margin-left: 55px;
+	margin-bottom: 70px;
+	border: 3px solid #FDBF2B;
+	border-radius: 50px;
+}
+
+.buttonQuiz{
+	background-color: #30B9C4;
+	width:90px;
+	padding-left:20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 40px;
+	text-align: center;
+	margin-top: 20px;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 16px;
+	
+}
+
+.buttonQuizPress{
+	background-color: #C52068;
+	width:90px;
+	padding-left:20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 40px;
+	text-align: center;
+	margin-top: 20px;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 16px;
+
+}
+
+.buttonQuiz:hover{
+	background-color: #FDBF2B;
+}
+
+/*************** LING-ATAR SECTION  ****************/
+
+.col3{
+
+	width:20%;
+	background-color: #61227C;
+	
+}
+
+.avatarLingIcon{
+	width:40%;
+	height: auto;
+	margin-top:20px;
+	padding-left: 70px;
+	margin-bottom: 36px;
+}
+
+.lingatar{
+	width:75%;
+	background-color: #C52068;
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 80px;
+	color:white;
+	font-family: 'Roboto', sans-serif !important;
+	text-transform: uppercase;
+	font-size: 16px;	
+}
+
+.avatarTitle{
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+	color:white;
+	text-transform: uppercase;
+	width:160px;
+	text-align: center;
+	padding-left: 40px;
+	padding-top: 20px;
+}
+
+/*************** FOOTER SECTION ****************/
+
+
+footer{
+	width:100%;
+	height: 80px;
+	background-color: #2F0A3C;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.footerBlue{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	width:70px;
+	background-color: #30B9C4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 50px;;
+	color:white;
+	text-transform: uppercase;
+	margin-left: 45px;	
+}
+
+.footerPink{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	width:70px;
+	background-color: #C52068;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 50px;;
+	color:white;
+	text-transform: uppercase;
+	margin-left: 45px;	
+}
+
+.footerYellow{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	width:70px;
+	background-color: #FDBF2B;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 50px;;
+	color:white;
+	text-transform: uppercase;
+	margin-left: 40px;
+	border:3px solid #10FE00;	
+}
+
+.footerNumbers{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	width:40px;
+	background-color: #FDBF2B;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 50px;;
+	color:black;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-left: 15px;
+	
+}

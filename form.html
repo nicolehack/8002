@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+	
+	</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/contactstylesheet.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+		
+<!--------------  MAIN NAVIGATION SECTION	--------------->	
+	
+	<section class="mainNav">
+		
+	<div class="col1 fl">
+		<a class="navLinkBlue">about</a>
+		<a class="navLinkPink">choices</a>
+	</div>	
+		
+	<div class="col1 fr">
+		<a href="funstuff.html" class="navLinkBlue">fun stuff</a>
+		<a href="form.html" class="navLinkPink onActive">contact</a>
+
+	</div>
+		<div class="col2"> 	
+			<a href="homepage.html"> <img src="images/lingscars-logo.png"  id="logoImg" alt="logo image"></a>		
+		</div>
+	<div class="clear"></div>
+	</section>
+	
+	
+<!--------------  CONTACT SECTION	--------------->	
+	
+	<section class="form fr">
+
+    <div id="card">
+		
+    <h1> Enter Information </h1>
+    <p class="form-textbox"> Name：</p>
+    <input id="name" name="name" type="text"  size="10"/>
+
+ 	<p>Type of Communication:</p>
+        <select>
+            <option value ="Inquiry">Inquiry about inventory</option>
+            <option value ="Problem">Problem with order form</option>
+            <option value="Question">Question about Ling</option>
+            <option value="Other">Other</option>
+        </select>
+
+    <p> Message(120 words or less)：</p>
+        <input id="message" name="message" type="text" width="48" height="48"/>
+    <p> <input type="button" value="Send" id="sendButton"></p>
+    
+    </div>
+
+</section>
+	<img src="images/CONTACTLING2.png" alt="ling" class="lingImage col10 fl">
+	
+	 <div class="clear"></div>
+
+		
+<!--------------  JAVA SCRIPT	--------------->	
+	
+        <script>
+            var sendButton=document.querySelector("#sendButton");
+            sendButton.addEventListener("click", showMessage);
+
+            ///functions below
+
+            function showMessage(){
+                var name = document.getElementById("name").value;
+                var content = document.getElementById("message").value;
+                alert("Your name is: "+ name+ "Your message is: " + content);
+                document.getElementById("name").value='';
+                document.getElementById("message").value='';
+            }
+ 
+        </script>
+		
+<!--------------  FOOTER SECTION	--------------->	
+		
+		
+	<footer>
+	
+	<p class="col8 fl footerBlue">happy customers Today</p>
+	<p class="col8 fl footerNumbers">42</p> 
+	<p class="col8 fl footerPink">Site Response Time</p> 
+	<p class="col8 fl footerNumbers">00.40</p> 
+	<p class="col8 fl footerBlue">Live Office Camera</p> 
+	<p class="col8 fl footerPink">Site Visitors Today</p> 
+	<p class="col8 fl footerNumbers">1,539</p> 
+	<p class="col8 fl footerBlue">Site Visitors Now</p>
+	<p class="col8 fl footerNumbers">12</p>
+	<p class="col8 fl footerYellow">Chat with Ling</p> 
+
+	<div class="clear"></div>
+
+	</footer>
+		
+
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+	</title>	
+
+	<link rel="stylesheet" type="text/css" href="css/homepage.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+
+<!--------------  MAIN NAVIGATION SECTION	--------------->	
+	
+	<section class="mainNav">
+		<div class="col1 fl">
+			<a class="navLinkBlue">about</a>
+			<a class="navLinkPink">choices</a>
+		</div>	
+			
+		<div class="col1 fr">
+			<a href="funstuff.html" class="navLinkBlue">fun stuff</a>
+			<a href="form.html" class="navLinkPink">contact</a>
+		</div>
+
+		<div class="col2"> 			
+			<a href="homepage.html"> <img src="images/lingscars-logo.png"  id="logoImg" alt="logo image"></a>
+		</div>
+			
+		<div class="clear"></div>
+	</section>
+	
+	
+<!--------------  VIDEO	--------------->
+
+<section class="video">
+
+	<video width="100%" controls  loop >
+ 		<source src="video.mp4" type="video/mp4" alt="Brooklyn 99 Ling's video">
+	</video>
+
+</section>	
+	
+<section class="chatbox">
+	<div class="chatcontent" id="chatcontent">
+
+	</div>
+
+	<div class="message">
+		<input id="message" type="text" name="chat" placeholder="Chat with Ling">
+		<button type="button" onclick="chatbot()">send</button>
+	</div>
+
+</section>
+<!--------------  JAVA SCRIPT	--------------->	
+	<script>
+	function chatbot(){
+	var name_container= document.createElement("h3");
+	var text_container= document.createElement("p");
+	var name;
+	var text;
+	var text1;
+		name=document.createTextNode("Me:");
+		name_container.appendChild(name);
+		document.getElementById("chatcontent").appendChild(name_container);
+		text1=document.getElementById("message").value;
+		text=document.createTextNode(text1);
+		text_container.appendChild(text);
+		document.getElementById("chatcontent").appendChild(text_container);
+		document.getElementById("message").value='';
+		
+	return false;
+	}
+</script>
+		
+<!--------------  FOOTER SECTION	--------------->		
+		
+<footer>
+	
+	<p class="col8 fl footerBlue">happy customers Today</p>
+	<p class="col8 fl footerNumbers">42</p> 
+	<p class="col8 fl footerPink">Site Response Time</p> 
+	<p class="col8 fl footerNumbers">00.40</p> 
+	<p class="col8 fl footerBlue">Live Office Camera</p> 
+	<p class="col8 fl footerPink">Site Visitors Today</p> 
+	<p class="col8 fl footerNumbers">1,539</p> 
+	<p class="col8 fl footerBlue">Site Visitors Now</p>
+	<p class="col8 fl footerNumbers">12</p> 
+	<p class="col8 fl footerYellow">Chat with Ling</p> 
+
+	<div class="clear"></div>
+
+
+</footer>
+
+    </body>
+</html>
