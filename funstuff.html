@@ -10,31 +10,32 @@
 
     </head>
 	
-</head>
 
 <body>
 	
 	
 <!--------------  MAIN NAVIGATION SECTION	--------------->	
 	
-	<section class="mainNav">
+<!--------------  MAIN NAVIGATION SECTION	--------------->	
+	
+	<section class="mainNav" id="myTopnav">
+		<div class="col1 fl">
+			<a href="Homepage.html" class="navLinkBlue">about</a>
+			<a class="navLinkPink">choices</a>
+		</div>	
+			
+		<div class="col1 fr">
+			<a href="funstuff.html" class="navLinkBlue onActive">fun stuff</a>
+			<a href="form.html" class="navLinkPink">contact</a>
+		</div>
+
+		<div class="col2"> 			
+			<a href="Homepage.html"> <img src="lingscars-logo.png"  id="logoImg" alt="logo image"></a>
+		</div>
 		
-	<div class="col1 fl">
-		<a class="navLinkBlue">about</a>
-		<a class="navLinkPink">choices</a>
-	</div>	
-		
-	<div class="col1 fr">
-		<a href="" class="navLinkBlue onActive">fun stuff</a>
-		<a href="form.html" class="navLinkPink">contact</a>
-	</div>
-		
-	<div class="col2"> 		
-		<a href="Homepage.html"> <img src="lingscars-logo.png"  id="logoImg" alt="logo image"></a>
-	</div>
-		
-		
-	<div class="clear"></div>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			
+		<div class="clear"></div>
 	</section>
 	
 <!--------------  FUN STUFF SECTION	--------------->
@@ -151,7 +152,27 @@
 
 </footer>
 		
-<!----------------- JAVA SCRIPT FOR THE QUIZ  ---------------------->	
+<!----------------- JAVA SCRIPT FOR THE QUIZ  -------------------->	
+	
+	
+				<!-- BURGER MENU -->
+
+<script>
+	
+	function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "mainNav") {
+        x.className += " responsive";
+    } else {
+        x.className = "mainNav";
+    }
+}
+	
+	
+	</script>
+		
+			
+	
 
 <script>
 

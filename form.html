@@ -14,22 +14,24 @@
 		
 <!--------------  MAIN NAVIGATION SECTION	--------------->	
 	
-	<section class="mainNav">
-		
-	<div class="col1 fl">
-		<a class="navLinkBlue">about</a>
-		<a class="navLinkPink">choices</a>
-	</div>	
-		
-	<div class="col1 fr">
-		<a href="funstuff.html" class="navLinkBlue">fun stuff</a>
-		<a href="form.html" class="navLinkPink onActive">contact</a>
-
-	</div>
-		<div class="col2"> 	
-			<a href="Homepage.html"> <img src="lingscars-logo.png"  id="logoImg" alt="logo image"></a>		
+	<section class="mainNav" id="myTopnav">
+		<div class="col1 fl">
+			<a href="Homepage.html" class="navLinkBlue">about</a>
+			<a class="navLinkPink">choices</a>
+		</div>	
+			
+		<div class="col1 fr">
+			<a href="funstuff.html" class="navLinkBlue">fun stuff</a>
+			<a href="form.html" class="navLinkPink onActive">contact</a>
 		</div>
-	<div class="clear"></div>
+
+		<div class="col2"> 			
+			<a href="Homepage.html"> <img src="lingscars-logo.png"  id="logoImg" alt="logo image"></a>
+		</div>
+		
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			
+		<div class="clear"></div>
 	</section>
 	
 	
@@ -63,7 +65,30 @@
 	 <div class="clear"></div>
 
 		
-<!--------------  JAVA SCRIPT	--------------->	
+<!--------------  JAVA SCRIPT	--------------->
+		
+		
+		
+		
+				<!-- BURGER MENU -->
+
+<script>
+	
+	function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "mainNav") {
+        x.className += " responsive";
+    } else {
+        x.className = "mainNav";
+    }
+}
+	
+	
+	</script>
+		
+		
+		
+		
 	
         <script>
             var sendButton=document.querySelector("#sendButton");

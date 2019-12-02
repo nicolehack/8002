@@ -2,6 +2,7 @@
 <html>
     <head>
     <title>
+    	Homepage
 	</title>	
 
 	<link rel="stylesheet" type="text/css" href="homepage.css">
@@ -13,10 +14,9 @@
 
 <!--------------  MAIN NAVIGATION SECTION	--------------->	
 	
-	<section class="mainNav">
-
+	<section class="mainNav" id="myTopnav">
 		<div class="col1 fl">
-			<a class="navLinkBlue">about</a>
+			<a href="Homepage.html" class="navLinkBlue onActive">about</a>
 			<a class="navLinkPink">choices</a>
 		</div>	
 			
@@ -28,6 +28,8 @@
 		<div class="col2"> 			
 			<a href="Homepage.html"> <img src="lingscars-logo.png"  id="logoImg" alt="logo image"></a>
 		</div>
+		
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 			
 		<div class="clear"></div>
 	</section>
@@ -54,26 +56,53 @@
 	</div>
 
 </section>
-<!--------------  JAVA SCRIPT	--------------->	
+
+<!--------------  JAVA SCRIPT	--------------->
+		
+		
+		
+				<!-- BURGER MENU -->
+
+<script>
+	
+	function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "mainNav") {
+        x.className += " responsive";
+    } else {
+        x.className = "mainNav";
+    }
+}
+	
+	
+	</script>
+		
+		
+		
+		
 	<script>
 	function chatbot(){
-	var name_container= document.createElement("h3");
-	var text_container= document.createElement("p");
-	var name;
-	var text;
-	var text1;
-		name=document.createTextNode("Me:");
-		name_container.appendChild(name);
-		document.getElementById("chatcontent").appendChild(name_container);
-		text1=document.getElementById("message").value;
-		text=document.createTextNode(text1);
-		text_container.appendChild(text);
-		document.getElementById("chatcontent").appendChild(text_container);
-		document.getElementById("message").value='';
+		var name_container= document.createElement("h3");
+		var text_container= document.createElement("p");
+		var name;
+		var text;
+		var text1;
+			name=document.createTextNode("Me:");
+			name_container.appendChild(name);
+			document.getElementById("chatcontent").appendChild(name_container);
+			text1=document.getElementById("message").value;
+			text=document.createTextNode(text1);
+			text_container.appendChild(text);
+			document.getElementById("chatcontent").appendChild(text_container);
+			document.getElementById("message").value='';
 		
 	return false;
 	}
 </script>
+		
+		
+		
+
 		
 <!--------------  FOOTER SECTION	--------------->		
 		

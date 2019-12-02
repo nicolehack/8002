@@ -17,6 +17,22 @@ body{
 
 /******* COLUMNS  ******/
 
+
+
+
+.icon {
+	border-radius: 50%;
+	color:white;
+	
+	
+}
+
+.mainNav .icon {
+    display: none;
+}
+
+
+
 .col1{
 	width: 30%;
 	margin-top: 10px;	
@@ -340,5 +356,90 @@ footer{
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-left: 15px;
+	
+}
+
+
+
+
+
+
+@media screen and (max-width: 1080px) {
+  .mainNav a {display: none;}
+  .mainNav a.icon {
+    float: right;
+    display:block;
+	font-size: 25px;
+	border-radius: 50%; 
+	margin-right: -120px;
+  }
+	
+	
+
+	
+	
+
+
+}
+
+
+@media screen and (max-width: 1080px) {
+  .mainNav .responsive {position:relative;}
+  .mainNav .responsive a.icon {
+    position: absolute;
+    right: 0; 
+    top: 0;
+  }
+	
+  .mainNav.responsive a {
+    float:none;
+    display:block;
+    text-align: left;
+	line-height: 30px;
+	border-bottom: none;
+	padding-left:10px;
+
+  }
+	
+	
+	.navLinkBlue{
+	color:#FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	width:100px;
+	padding-left:10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #30B9C4;
+	border-radius: 20px;
+	margin-bottom: 10px;
+
+	
+	
+}
+
+.navLinkPink{
+	color:#FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	width:100px;
+	padding-left:10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #C52068;
+	border-radius: 20px;	
+}
+	
+	#logoImg{
+	display: none;
+}
+	
+	.icon{
+		margin-left: 220px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+
 	
 }
